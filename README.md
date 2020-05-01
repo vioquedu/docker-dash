@@ -10,10 +10,16 @@ configuration file `Dockerfile`. This Dockerfile does not copy the application c
 the image. It just copy the `requirements.txt`. This means we will 
 need to map the folders with the application code.
 
+### Build the image
+
+```
+docker build -t dash:1.0 .
+```
+
 ### Run the image 
 
 ```
-docker run -d -p 8050:8050 -v $(pwd):/app/
+docker run -d -p 8050:8050 -v $(pwd):/app/ dash:1.0
 ```
 
 ## Production
