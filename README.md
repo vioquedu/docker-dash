@@ -7,7 +7,7 @@ on docker.
 
 During the development of the application we will create a docker image base on the
 configuration file `Dockerfile`. This Dockerfile does not copy the application code into
-the image, it just copy the `requirements.txt`, this means we will 
+the image, it just copies the `requirements.txt`, this means we will 
 need to map the folders with the application code.
 
 ### Pull image from Dockerhub
