@@ -10,17 +10,25 @@ configuration file `Dockerfile`. This Dockerfile does not copy the application c
 the image. It just copy the `requirements.txt`. This means we will 
 need to map the folders with the application code.
 
-### Build the image
+
+### Pull image from Dockerfile
 
 ```
-docker build -t dash:1.0 .
+docker run -d -p 8050:8050 -v $(pwd):/app/ vioquedu/dash-dev:latest
 ```
 
-### Run the image 
+### Build and run from Dockerfile
+
+You can build the image from the code in this repository using the following command:
 
 ```
-docker run -d -p 8050:8050 -v $(pwd):/app/ dash:1.0
+docker build -t image_name:tag .
 ```
+
+```
+docker run -d -p 8050:8050 -v $(pwd):/app/ image_name:tag
+```
+
 
 ## Production
 
