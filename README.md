@@ -5,7 +5,7 @@ on docker.
 
 ## Development
 
-### Pull image from Dockerhub
+### Pull the image from Docker Hub
 
 For development you can directly pull the image from 
 Docker Hub and start coding your Dash application in a 
