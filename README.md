@@ -32,5 +32,5 @@ docker run -d -p 8050:8050 -v $(pwd):/app/ image_name:tag
 Once your application is ready for deployment, you can use the file `Dockerfile.prod` to bundle your code into a docker image ready to deploy.
 
 ```
-docker build -t name:version -f Dockerfile.prod
+docker build -t name:version -f Dockerfile.prod .
 ```
